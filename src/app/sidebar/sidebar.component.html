@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li *ngFor="let item of sidebar; let i = index" [class]="i % 3 === 2 ? 'mb-4' : ''">
+      {{ item.name }}
+    </li>
+  </ul>
+</div>
