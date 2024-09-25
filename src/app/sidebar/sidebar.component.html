@@ -1,12 +1,13 @@
-<div class="pl-4 bg-[#F8FAFD] ">
-  <button class="py-4 border bg-white px-6 rounded-2xl border-b-2 flex flex-row">
+<div class="pl-4 bg-[#F8FAFD]">
+  <label class="py-4 border bg-white px-6 rounded-2xl border-b-2 flex flex-row max-w-28">
+    <input type="file" class="hidden" (change)="onFileSelected($event)" />
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="size-6"
+      class="size-6 mr-2"
     >
       <path
         stroke-linecap="round"
@@ -15,7 +16,14 @@
       />
     </svg>
     New
-  </button>
+</label>
+
+  <div *ngIf="fileDetails" class="mt-4 p-4 border border-gray-300 rounded">
+    <h4 class="font-bold">File Details:</h4>
+    <p><strong>Name:</strong> {{ fileDetails.name }}</p>
+    <p><strong>Type:</strong> {{ fileDetails.type }}</p>
+    <p><strong>Size:</strong> {{ fileDetails.size }} bytes</p>
+  </div>
 
   <ul class="mt-5">
     <li
