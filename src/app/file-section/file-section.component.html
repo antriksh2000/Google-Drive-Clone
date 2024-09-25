@@ -1,18 +1,167 @@
-<div>
-    <h2>Welcome to Drive</h2>
-    <input type="text" placeholder="Search in Drive">
-    <div class="flex flex-row gap-5">
-        <button>Type</button>
-        <button>People</button>
-        <button>Modified</button>
-        <button>Location</button>
-    </div>
-    <h3>Suggested Folders</h3>
-    <div>
-        <!-- folders areas -->
-         
-    </div>
-    <h1>Suggested Files</h1>
+  <h2 class="text-center text-2xl">Welcome to Drive</h2>
 
-    <h1>files</h1>
-</div>
+  <div class="w-full flex justify-center mt-4 mb-5">
+    <input
+      type="text"
+      class="flex justify-center items-center w-[800px] py-3 px-5 rounded-3xl bg-[#F0F4F9] text-black border-0 focus:outline-none focus:ring-0 focus:border-transparent"
+      placeholder="Search in Drive"
+    />
+  </div>
+
+  <div class="flex flex-row gap-5 justify-center">
+    <button class="bg-[#F0F4F9] px-8 py-1 rounded-3xl">Type</button>
+    <button class="bg-[#F0F4F9] px-8 py-1 rounded-3xl">People</button>
+    <button class="bg-[#F0F4F9] px-8 py-1 rounded-3xl">Modified</button>
+    <button class="bg-[#F0F4F9] px-8 py-1 rounded-3xl">Location</button>
+  </div>
+  <h3 class="font-semibold pb-5">Suggested Folders</h3>
+  <div class="flex flex-row gap-5">
+    <div class="bg-[#F0F4F9] w-72 rounded-xl flex flex-row">
+        <div class="flex justify-center items-center pl-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V10.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col py-3 items-left pl-10">
+            <h2 class="font-semibold text-sm">title</h2>
+            <h2 class="text-sm">in my Drive</h2>
+        </div>
+        <div class="py-5 pl-20 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        </div>
+      </div>
+      <div class="bg-[#F0F4F9] w-72 rounded-xl flex flex-row">
+        <div class="flex justify-center items-center pl-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V10.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col py-3 items-left pl-10">
+          <h2 class="font-semibold text-sm">title</h2>
+          <h2 class="text-sm">in my Drive</h2>
+      </div>
+        <div class="py-5 pl-20 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        </div>
+      </div>
+    <!-- folders areas -->
+  </div>
+  <h1 class="pt-5 font-semibold">Suggested Files</h1>
+
+
+    <div class="flex  flex-wrap gap-5">
+      
+  <div class="bg-[#F0F4F9] max-w-72">
+    <div class=" items-center justify-around flex flex-row  py-2">
+      <div>
+        <div class="a-c"><svg class="c7bJtd" style="width:16px;height:16px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 .008.8.008 1.778L0 4.444v9.778C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm0 7.111h-7.11v7.111H5.332v-7.11H1.778V5.332h3.555V1.778h1.778v3.555h7.111v1.778z"></path></svg></div>
+      </div>
+      <div>
+        title
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        
+      </div>
+    </div>
+    <div class="p-4 rounded-lg">
+      <img src="https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727222400&semt=ais_hybrid" alt="fawefwe">
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="bg-[#F0F4F9] max-w-72">
+    <div class=" items-center justify-around flex flex-row  py-2">
+      <div>
+        <div class="a-c"><svg class="c7bJtd" style="width:16px;height:16px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 .008.8.008 1.778L0 4.444v9.778C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm0 7.111h-7.11v7.111H5.332v-7.11H1.778V5.332h3.555V1.778h1.778v3.555h7.111v1.778z"></path></svg></div>
+      </div>
+      <div>
+        title
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        
+      </div>
+    </div>
+    <div class="p-4 rounded-lg">
+      <img src="https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727222400&semt=ais_hybrid" alt="fawefwe">
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="bg-[#F0F4F9] max-w-72">
+    <div class=" items-center justify-around flex flex-row  py-2">
+      <div>
+        <div class="a-c"><svg class="c7bJtd" style="width:16px;height:16px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 .008.8.008 1.778L0 4.444v9.778C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm0 7.111h-7.11v7.111H5.332v-7.11H1.778V5.332h3.555V1.778h1.778v3.555h7.111v1.778z"></path></svg></div>
+      </div>
+      <div>
+        title
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        
+      </div>
+    </div>
+    <div class="p-4 rounded-lg">
+      <img src="https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727222400&semt=ais_hybrid" alt="fawefwe">
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="bg-[#F0F4F9] max-w-72">
+    <div class=" items-center justify-around flex flex-row  py-2">
+      <div>
+        <div class="a-c"><svg class="c7bJtd" style="width:16px;height:16px;" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.222 0H1.778C.8 0 .008.8.008 1.778L0 4.444v9.778C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm0 7.111h-7.11v7.111H5.332v-7.11H1.778V5.332h3.555V1.778h1.778v3.555h7.111v1.778z"></path></svg></div>
+      </div>
+      <div>
+        title
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+        </svg>
+        
+      </div>
+    </div>
+    <div class="p-4 rounded-lg">
+      <img src="https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727222400&semt=ais_hybrid" alt="fawefwe">
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+    </div>

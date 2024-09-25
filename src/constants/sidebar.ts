@@ -1,8 +1,8 @@
 
 const sidebarData = [
     { id: 'Home', name: 'Home' },
-    { id: 'myDrive', name: 'myDrive' },
-    { id: 'Computer', name: 'Computer' },
+    { id: 'myDrive', name: 'My Drive' },
+    { id: 'Computer', name: 'Computers' },
     { id: 'Shared', name: 'Shared with Me' },
     { id: 'Recent', name: 'Recent' },
     { id: 'Starred', name: 'Starred' },

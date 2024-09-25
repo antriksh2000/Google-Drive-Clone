@@ -1,7 +1,37 @@
-<div>
-  <ul>
-    <li *ngFor="let item of sidebar; let i = index" [class]="i % 3 === 2 ? 'mb-4' : ''">
-      {{ item.name }}
+<div class="pl-4 bg-[#F8FAFD] ">
+  <button class="py-4 border bg-white px-6 rounded-2xl border-b-2 flex flex-row">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 4.5v15m7.5-7.5h-15"
+      />
+    </svg>
+    New
+  </button>
+
+  <ul class="mt-5">
+    <li
+      *ngFor="let item of sidebar; let i = index"
+      [ngClass]="{
+        'bg-[#C2E7FF] text-black': selectedItem === i,
+        'hover:bg-gray-200': selectedItem !== i,
+        'rounded-3xl': true,
+        'mb-4': (i + 1) % 3 === 0
+      }"
+      (click)="selectItem(i)"
+      class="cursor-pointer"
+    >
+      <button class="py-1 font-normal px-5">
+        {{ item.name }}
+      </button>
     </li>
   </ul>
 </div>
