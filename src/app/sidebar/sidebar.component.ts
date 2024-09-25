@@ -11,4 +11,16 @@ import sidebarData from '../../constants/sidebar';
 })
 export class SidebarComponent {
   @Input() sidebar = sidebarData; // Default data
+  selectedItem: number | null = null; // Track the selected item
+
+  ngOnInit() {
+    console.log("hello world"); // Log sidebar data to make sure it's not empty
+  }
+  
+  selectItem(index: number) {
+  
+    console.log('Selected Item:', index); // Debugging to ensure it's called
+    this.selectedItem = index; // Set the selected item index on click
+  }
 }
+  
